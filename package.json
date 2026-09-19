@@ -18,8 +18,8 @@
   "type": "module",
   "main": "server.js",
   "scripts": {
-    "test": "node server.js",
-    "dev": "node --watch server.js"
+    "test": "node api/index.js",
+    "dev": "node --watch api/index.js"
   },
   "dependencies": {
     "cookie-parser": "^1.4.7",
