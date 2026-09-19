@@ -1,3 +1,4 @@
+import mongoose from "mongoose";
 import express from "express"
 import AdminRouter from "./routes/admin.route.js";
 import InstituteRouter from "./routes/institute.route.js";
