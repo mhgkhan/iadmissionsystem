@@ -1,0 +1,30 @@
+{
+  "name": "iadmissionsystem",
+  "version": "1.0.0",
+  "description": "this is the project for registered institute admissions",
+  "keywords": [
+    "iadmissionsystem"
+  ],
+  "homepage": "https://github.com/mhgkhan/iadmissionsystem#readme",
+  "bugs": {
+    "url": "https://github.com/mhgkhan/iadmissionsystem/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mhgkhan/iadmissionsystem.git"
+  },
+  "license": "ISC",
+  "author": "mhgkhan",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "ejs": "^6.0.1",
+    "express": "^5.2.1",
+    "mongoose": "^9.10.0"
+  }
+}
