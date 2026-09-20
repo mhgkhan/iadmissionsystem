@@ -18,8 +18,8 @@
   "type": "module",
   "main": "server.js",
   "scripts": {
-    "test": "node api/index.js",
-    "dev": "node --watch api/index.js"
+    "start": "node --env-file=\".env\" api/index.js",
+    "dev": "node --watch --env-file=\".env\" api/index.js"
   },
   "dependencies": {
     "cookie-parser": "^1.4.7",

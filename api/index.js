@@ -30,7 +30,7 @@ const PORT = process.env.PORT || 3000;
 
 
 try {
-    await mongoose.connect("mongodb://localhost:27017/iadmissionsystem");
+    await mongoose.connect(process.env.DB_URI);
 
     APP.listen(PORT, () => {
         console.log("Connected to database successfully");
