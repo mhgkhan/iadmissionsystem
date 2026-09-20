@@ -3,6 +3,8 @@ import express from "express"
 import AdminRouter from "./routes/admin.route.js";
 import InstituteRouter from "./routes/institute.route.js";
 import UserRouter from "./routes/user.route.js";
+import path from "path";
+
 
 export const APP = express();
 
@@ -10,9 +12,12 @@ export const APP = express();
 APP.use(express.json());
 
 APP.use(express.urlencoded({ extended: true }));
+// ADDED PUBLIC FOLDER PATH 
+APP.use(express.static(path.join(process.cwd(), "public")));
 
+// SETTING VIEW ENGINE
 APP.set("view engine", "ejs");
-APP.set("views", "./views");
+APP.set("views", path.join(process.cwd(), "views"));
 
 
 
